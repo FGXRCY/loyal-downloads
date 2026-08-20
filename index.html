@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loyal Caters - Download App</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5efe0 0%, #ffffff 60%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    padding: 48px 36px;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    width: 96px;
+    height: 96px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #1f2d27;
+    margin-bottom: 6px;
+  }
+  p.subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  }
+  .android {
+    background: #17402f;
+    color: #fff;
+  }
+  .windows {
+    background: #eee7d3;
+    color: #1f2d27;
+    border: 1px solid #dcd3b8;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .note {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="loyallogo.png" alt="Loyal Caters Logo" class="logo">
+  <h1>Loyal Event & Caterers</h1>
+  <p class="subtitle">Download the app for your device</p>
+
+  <a href="loyal-caters.apk" class="download-btn android" download>
+    <span class="icon">🤖</span> Download for Android
+  </a>
+
+  <a href="loyal-caters.msix" class="download-btn windows" download>
+    <span class="icon">🖥️</span> Download for Windows
+  </a>
+
+  <p class="note">
+    Android: allow "install from unknown sources" if prompted.<br>
+    Windows: run install.ps1 if included, and approve the security prompt.
+  </p>
+</div>
+
+</body>
+</html>
